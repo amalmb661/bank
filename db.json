@@ -1,0 +1,128 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "accountNumber": "12345",
+      "name": "Jobin",
+      "balance": 2800,
+      "password": "secret"
+    },
+    {
+      "id": "4cc9",
+      "accountNumber": "11",
+      "name": "1",
+      "password": "111111",
+      "balance": 22222
+    },
+    {
+      "id": "2860",
+      "accountNumber": "111",
+      "name": "1",
+      "password": "123123",
+      "balance": 11001
+    },
+    {
+      "id": "df20",
+      "accountNumber": "2",
+      "name": "Akash",
+      "password": "222222",
+      "balance": 300012
+    },
+    {
+      "id": "2cc3",
+      "accountNumber": "123345",
+      "name": "Arun",
+      "password": "123345",
+      "balance": null
+    },
+    {
+      "id": "d489",
+      "accountNumber": "0",
+      "name": "0",
+      "password": "000000",
+      "balance": 7256
+    },
+    {
+      "id": "356e",
+      "accountNumber": "1",
+      "name": "1",
+      "password": "111111",
+      "balance": 1
+    },
+    {
+      "id": "60d4",
+      "accountNumber": "123456",
+      "name": "Amal",
+      "password": "123456",
+      "balance": 988
+    }
+  ],
+  "transactions": [
+    {
+      "id": "487e"
+    },
+    {
+      "id": "66f5",
+      "accountNumber": "12345",
+      "type": "Credit",
+      "amount": 1,
+      "date": "2024-09-25T03:39:59.180Z"
+    },
+    {
+      "id": "64c1",
+      "accountNumber": "12345",
+      "type": "Debit",
+      "amount": 2,
+      "date": "2024-09-25T03:40:03.485Z"
+    },
+    {
+      "id": "f92e",
+      "accountNumber": "12345",
+      "type": "Debit",
+      "amount": 22,
+      "date": "2024-09-25T03:40:11.973Z"
+    },
+    {
+      "id": "5842",
+      "accountNumber": "12345",
+      "type": "Credit",
+      "amount": 11,
+      "date": "2024-09-25T03:40:15.565Z"
+    },
+    {
+      "id": "8adb",
+      "accountNumber": "12345",
+      "type": "Credit",
+      "amount": 111,
+      "date": "2024-09-25T04:11:19.807Z"
+    },
+    {
+      "id": "2f17",
+      "accountNumber": "12345",
+      "type": "Debit",
+      "amount": 132,
+      "date": "2024-09-25T04:11:37.379Z"
+    },
+    {
+      "id": "4bc6",
+      "accountNumber": "12345",
+      "type": "Credit",
+      "amount": 12,
+      "date": "2024-09-25T04:40:46.644Z"
+    },
+    {
+      "id": "7bb0",
+      "accountNumber": "2",
+      "type": "Credit",
+      "amount": 1,
+      "date": "2024-09-29T06:01:49.762Z"
+    },
+    {
+      "id": "bf9a",
+      "accountNumber": "2",
+      "type": "Credit",
+      "amount": 11,
+      "date": "2024-09-29T06:03:00.623Z"
+    }
+  ]
+}
