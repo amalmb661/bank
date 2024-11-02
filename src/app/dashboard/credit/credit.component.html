@@ -1,0 +1,32 @@
+
+
+<div class="credit-container">
+    <h2>Credit Amount</h2>
+  
+    <form [formGroup]="creditForm" (ngSubmit)="onSubmit()" class="credit-form">
+
+        <div class="form-group">
+          <label for="accountNumber">Account Number</label>
+          <input id="accountNumber" type="text" formControlName="accountNumber" class="form-control" placeholder="Enter account number" >
+          <div *ngIf="creditForm?.get('accountNumber')?.invalid && creditForm?.get('accountNumber')?.touched" class="error">
+            Account number is required.
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="creditAmount">Credit Amount</label>
+          <input id="creditAmount" type="number" formControlName="creditAmount" class="form-control" placeholder="Enter credit amount">
+          <div *ngIf="creditForm?.get('creditAmount')?.invalid && creditForm?.get('creditAmount')?.touched" class="error">
+            Credit amount is required and should be greater than 0.
+          </div>
+        </div>
+      
+        <button type="submit" class="btn-submit" [disabled]="creditForm?.invalid">Credit</button><br>
+      
+      </form>
+<button routerLink="/dashboard/dashboard" class="btn-submit">Dashboard</button><br><br>
+<button routerLink="/dashboard/debit" class="btn-submit">Debit</button><br><br>
+<button routerLink="/dashboard/transactions" class="btn-submit">Transaction</button><br><br>
+
+  </div>
+  

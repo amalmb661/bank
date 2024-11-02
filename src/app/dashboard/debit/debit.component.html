@@ -1,0 +1,30 @@
+<div class="debit-container">
+  <h2>Debit Amount</h2>
+
+  <form [formGroup]="debitForm" (ngSubmit)="onSubmit()" class="debit-form">
+
+      <div class="form-group">
+        <label for="accountNumber">Account Number</label>
+        <input id="accountNumber" type="text" formControlName="accountNumber" class="form-control" placeholder="Enter account number" >
+        <div *ngIf="debitForm?.get('accountNumber')?.invalid && debitForm?.get('accountNumber')?.touched" class="error">
+          Account number is required.
+        </div>
+      </div>
+    
+      <div class="form-group">
+        <label for="debitAmount">Credit Amount</label>
+        <input id="debitAmount" type="number" formControlName="debitAmount" class="form-control" placeholder="Enter debit amount">
+        <div *ngIf="debitForm?.get('debitAmount')?.invalid && debitForm?.get('debitAmount')?.touched" class="error">
+          Credit amount is required and should be greater than 0.
+        </div>
+      </div>
+    
+      <button type="submit" class="btn-submit" [disabled]="debitForm?.invalid">Debit</button><br>
+    
+    </form>
+    <button routerLink="/dashboard/dashboard" class="btn-submit">Dashboard</button><br><br>
+<button routerLink="/dashboard/credit" class="btn-submit">Credit</button><br><br>
+<button routerLink="/dashboard/transactions" class="btn-submit">Transaction</button><br><br>
+
+</div>
+  

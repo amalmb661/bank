@@ -1,0 +1,31 @@
+.main{
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto 20px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .btn-submit {
+    width: 60%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  .main-btn{
+   width: 25%;
+    margin: 30px auto;text-align: center;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  

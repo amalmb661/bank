@@ -1,0 +1,17 @@
+
+<div class="main">
+  <div *ngIf="currentUser">
+    <h1>Welcome, {{ currentUser.name }}!</h1>
+    <p>Your balance is: {{ currentUser.balance | currency }}</p>
+  </div>
+  
+ 
+  
+</div><div class="main-btn">
+  <button routerLink="/dashboard/dashboard" class="btn-submit">Dashboard</button><br>
+    <button routerLink="/dashboard/credit" class="btn-submit">Credit</button><br>
+  
+  <button routerLink="/dashboard/debit" class="btn-submit">Debit</button><br>
+  <button routerLink="/dashboard/transactions" class="btn-submit">Transaction</button><br>
+  <button (click)="logout()" class="btn-submit">Logout</button><br>
+</div>

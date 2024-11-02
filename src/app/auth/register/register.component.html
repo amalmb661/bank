@@ -1,0 +1,28 @@
+<!-- <h1>Register Page</h1>
+<br>
+<div>
+    <label>Name</label>: <input type="text">
+    <label>User name</label>: <input type="text">
+    <label>Email</label>: <input type="email">
+    <label>Password</label>: <input type="password">
+    <button>Submit</button>
+</div><br>  
+<div>
+    <button routerLink="/auth/login">Login</button>
+</div> -->
+<div class="login-container">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <label for="accountNumber">Account Number</label>
+    <input id="accountNumber" formControlName="accountNumber" />
+    <div *ngIf="accountNumberExists">Account number already exists!</div>
+  
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" />
+  
+    <label for="password">Password</label>
+    <input id="password" type="password" formControlName="password" />
+  <br><br>
+    <button type="submit" [disabled]="registerForm.invalid"  class="btn-submit">Register</button>
+  </form><br>
+  <button routerLink="/auth/login"  class="btn-submit">Login</button>
+</div>
